@@ -1,0 +1,151 @@
+/***** SETUP *****/
+
+body {
+	font-family: "Jaldi", sans-serif;
+}
+
+.container {
+	max-width: 75%;
+}
+
+/* Creates ability to have 5 columns span the full width of the row. */
+.col-xs-15, .col-sm-15, .col-md-15, .col-lg-15{
+    width:20%;
+}
+
+/***** CONTAINER *****/
+
+#container {
+	width: 100%;
+	height: auto;
+	background: #F4F4F4;
+}
+
+#header {
+	width: 100%;
+	height: 100px;
+	background: repeat-x top url("../Images/bg-brand-pattern.jpg");
+	-webkit-box-shadow: 0 9px 5px -5px #444;
+	-moz-box-shadow: 0 9px 5px -5px #444;
+	box-shadow: 0 9px 5px -5px #444;
+}
+
+/***** QUICKLINKS *****/
+
+#quicklinks {
+	width: 100%;
+	height: 50px;
+	text-align: right;
+	background: #434250;
+	color: #ffffff;
+	vertical-align: middle;
+	line-height: 50px;
+}
+
+ul#quicklinks-nav li{
+	list-style-type: none;
+	display: inline;
+	padding-left: 20px;
+}
+
+ul#quicklinks-nav :last-child {
+	/*border-left: 1px #fff solid;
+	border-right: 1px #fff solid;*/
+}
+
+/***** LOGO *****/
+
+#logo {
+	width: 100%;
+	height: 50px;
+	vertical-align: middle;
+	line-height: 50px;
+}
+
+/***** NAVIGATION *****/
+
+#nav {
+	width: 100%;
+	height: 50px;
+	background: #002855;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	vertical-align: middle;
+	border-bottom: 5px solid #ce8800;
+}
+
+/***** MASTHEAD *****/
+
+#masthead {
+	width: 100%;
+	height: 100px;
+	background: repeat-x top url("../Images/bg-brand-pattern.jpg");
+}
+
+/***** CONTENT *****/
+
+#content {
+	width: 100%;
+	height: auto;
+	background: #FFFFFF;
+}
+
+#hero {
+	background: #000;
+	height: 350px;
+	margin-bottom: 30px;
+}
+
+.main-content-header {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.2em;	
+}
+
+#main-news, #main-events, #main-academic-calendar, #main-services{
+	padding: 0;
+}
+
+#main-news li, #main-events li, #main-academic-calendar li, #main-services li{
+	list-style: none;
+	border-bottom: 1px #333 solid;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+#main-page-stats {
+	background: #1b3a59;
+	color: #fff;
+	height: 125px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 125px;
+}
+
+#main-page-stats div {
+	border-right: 2px #002855 solid;
+}
+
+#stat-number {
+	font-size: 2.2em;
+}
+
+/***** FOOTER *****/
+
+#footer {
+	width: 100%;
+	height: 366px;
+}
+
+#baselinks {
+	width: 100%;
+	height: 275px;
+	background: #022040;
+}
+
+#contact {
+	width: 100%;
+	height: 90px;
+	background: #002855;
+}
