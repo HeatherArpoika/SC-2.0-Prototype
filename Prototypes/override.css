@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-	max-width: 75%;
+	max-width: 60%;
 }
 
 /* Creates ability to have 5 columns span the full width of the row. */
@@ -23,8 +23,8 @@ body {
 
 #header {
 	width: 100%;
-	height: 100px;
-	background: repeat-x top url("../Images/bg-brand-pattern.jpg");
+	height: 150px;
+	background: repeat top url("../Images/bg-brand-pattern.jpg");
 	-webkit-box-shadow: 0 9px 5px -5px #444;
 	-moz-box-shadow: 0 9px 5px -5px #444;
 	box-shadow: 0 9px 5px -5px #444;
@@ -57,9 +57,9 @@ ul#quicklinks-nav :last-child {
 
 #logo {
 	width: 100%;
-	height: 50px;
+	height: 100px;
 	vertical-align: middle;
-	line-height: 50px;
+	line-height: 100px;
 }
 
 /***** NAVIGATION *****/
@@ -73,6 +73,53 @@ ul#quicklinks-nav :last-child {
 	line-height: 50px;
 	vertical-align: middle;
 	border-bottom: 5px solid #ce8800;
+}
+
+/***** HERO *****/
+
+#hero-image {
+	background: #000 url("../images/banner-feature-chef-shawn.png") no-repeat;
+	height: 495px;
+	margin-bottom: 30px;
+	padding: 75px 0 0 0;
+}
+
+#hero-features {
+	height: 495px;
+	background: #103057;
+}
+
+#hero-image-h1 {
+	color: #72c3d9;
+	text-transform: uppercase;
+	font-size: 2.2em;
+	vertical-align: middle;
+	font-weight: 700;
+	padding-left: 15px;
+}
+
+#hero-image-h2 {
+	color: #bc6101;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+#hero-image-text-box {
+	color: #fff;
+	background: rgba(0,0,0,.75);
+	width: 35%;
+	margin: 0;
+	margin-top: 95px;
+	padding: 0px 15px 0px 15px; /* Mysterious top and bottom padding issue. */
+}
+
+#hero-image-text-box a {
+	color: #fcd14e;
+}
+
+#hero-features {
+	color: #fff;
 }
 
 /***** MASTHEAD *****/
@@ -89,12 +136,6 @@ ul#quicklinks-nav :last-child {
 	width: 100%;
 	height: auto;
 	background: #FFFFFF;
-}
-
-#hero {
-	background: #000;
-	height: 350px;
-	margin-bottom: 30px;
 }
 
 .main-content-header {
