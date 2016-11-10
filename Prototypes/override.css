@@ -1,11 +1,9 @@
 /***** SETUP *****/
 
 body {
+	background: #f1f1f1 url("../images/bg-body-strip.png") repeat-x;
 	font-family: "Jaldi", sans-serif;
-}
-
-.container {
-	max-width: 60%;
+	font-size: 19px;
 }
 
 /* Creates ability to have 5 columns span the full width of the row. */
@@ -13,180 +11,243 @@ body {
     width:20%;
 }
 
-/***** CONTAINER *****/
-
-#container {
-	width: 100%;
-	height: auto;
-	background: #F4F4F4;
+.column, .columns {
+	padding-right: 0px;
+	padding-left: 0px;
 }
 
-#header {
-	width: 100%;
-	height: 150px;
-	background: repeat top url("../Images/bg-brand-pattern.jpg");
-	-webkit-box-shadow: 0 9px 5px -5px #444;
-	-moz-box-shadow: 0 9px 5px -5px #444;
-	box-shadow: 0 9px 5px -5px #444;
+.row {
+	background: #fff;
 }
 
-/***** QUICKLINKS *****/
+#left-side {
 
-#quicklinks {
-	width: 100%;
-	height: 50px;
-	text-align: right;
-	background: #434250;
-	color: #ffffff;
-	vertical-align: middle;
-	line-height: 50px;
 }
 
-ul#quicklinks-nav li{
-	list-style-type: none;
-	display: inline;
-	padding-left: 20px;
+#right-side {
+	padding-left: 70px;
 }
 
-ul#quicklinks-nav :last-child {
-	/*border-left: 1px #fff solid;
-	border-right: 1px #fff solid;*/
+/***** TYPOGRAPHY *****/
+
+p {
+	font-family: "Jaldi", sans-serif;
+	font-size: 19px;
+	color: #444;
 }
 
-/***** LOGO *****/
-
-#logo {
-	width: 100%;
-	height: 100px;
-	vertical-align: middle;
-	line-height: 100px;
-}
-
-/***** NAVIGATION *****/
-
-#nav {
-	width: 100%;
-	height: 50px;
-	background: #002855;
-	color: #fff;
-	text-align: center;
-	line-height: 50px;
-	vertical-align: middle;
-	border-bottom: 5px solid #ce8800;
-}
-
-/***** HERO *****/
-
-#hero-image {
-	background: #000 url("../images/banner-feature-chef-shawn.png") no-repeat;
-	height: 495px;
-	margin-bottom: 30px;
-	padding: 75px 0 0 0;
-}
-
-#hero-features {
-	height: 495px;
-	background: #103057;
-}
-
-#hero-image-h1 {
-	color: #72c3d9;
-	text-transform: uppercase;
-	font-size: 2.2em;
-	vertical-align: middle;
+h1 {
+	color: #ac7600;
+	font-size: 19px;
 	font-weight: 700;
-	padding-left: 15px;
-}
-
-#hero-image-h2 {
-	color: #bc6101;
-	font-size: 1.5em;
 	text-transform: uppercase;
-	font-weight: 700;
 }
 
-#hero-image-text-box {
-	color: #fff;
-	background: rgba(0,0,0,.75);
-	width: 35%;
-	margin: 0;
-	margin-top: 95px;
-	padding: 0px 15px 0px 15px; /* Mysterious top and bottom padding issue. */
-}
-
-#hero-image-text-box a {
-	color: #fcd14e;
-}
-
-#hero-features {
-	color: #fff;
-}
-
-/***** MASTHEAD *****/
-
-#masthead {
-	width: 100%;
-	height: 100px;
-	background: repeat-x top url("../Images/bg-brand-pattern.jpg");
-}
-
-/***** CONTENT *****/
-
-#content {
-	width: 100%;
-	height: auto;
-	background: #FFFFFF;
-}
-
-.main-content-header {
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 1.2em;	
-}
-
-#main-news, #main-events, #main-academic-calendar, #main-services{
-	padding: 0;
-}
-
-#main-news li, #main-events li, #main-academic-calendar li, #main-services li{
-	list-style: none;
-	border-bottom: 1px #333 solid;
+h2 {
+	font-size: 30px;
+	color: #002855;
 	padding-top: 15px;
+}
+
+h3 {
+	font-size: 25px;
+	color: #002855;
+	padding-top: 15px;
+}
+
+/***** TOP ROW *****/
+
+#logo-row {
+	background: none;
+	padding-top: 50px;
+}
+
+/***** MEGA MENU *****/
+	.nav,
+	.nav a,
+	.nav ul,
+	.nav li,
+	.nav div,
+	.nav form,
+	.nav input {
+	    margin: 0;
+	    padding: 0;
+	    border: none;
+	    outline: none;
+	}
+	 
+	.nav a { text-decoration: none; }
+	 
+	.nav li { list-style: none;}
+	.nav {
+		width: 100%;
+	    display: inline-block;
+	    position: relative;
+	    cursor: default;
+	    z-index: 500;
+		border-bottom: 5px solid #ac7600;
+		background: #002544;
+	}
+	 
+	.nav > li {
+	    display: block;
+	    float: left;
+		width: 16.66%;
+		padding-left: 0;
+		padding-right: 0;
+		margin: 0;
+		text-align: center;
+	}
+	.nav > li > a {
+	    position: relative;
+	    display: block;
+	    z-index: 510;
+	    height: 54px;
+	    padding: 0 20px;
+	    line-height: 54px;
+	 
+	    color: white;
+	    text-shadow: 0 0 1px rgba(0,0,0,.35);
+	 
+	    -webkit-transition: all .3s ease;
+	    -moz-transition: all .3s ease;
+	    -o-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	    transition: all .3s ease;
+	}
+	.nav > li:hover > a {  }
+	 
+	.nav > li:first-child > a {
+	    border-radius: 3px 0 0 3px;
+	    border-left: none;
+	}
+	.nav > li > div {
+	    position: absolute;
+	    display: block;
+	    width: 100%;
+	    top: 50px;
+	    left: 0;
+	 
+	    opacity: 0;
+	    visibility: hidden;
+	    overflow: hidden;
+	 
+	    background: #ffffff;
+	    border-radius: 0 0 3px 3px;
+	 
+	    -webkit-transition: all .3s ease .15s;
+	    -moz-transition: all .3s ease .15s;
+	    -o-transition: all .3s ease .15s;
+	    -ms-transition: all .3s ease .15s;
+	    transition: all .3s ease .15s;
+	}
+	.nav > li:hover > div {
+	    opacity: 1;
+	    visibility: visible;
+	    overflow: visible;
+	}
+	.nav .nav-column {
+	    float: left;
+	    width: 20%;
+	    padding: 2.5%;
+		background-color: #002544;
+		text-align: left;
+		border-top: 5px solid #ac7600;
+	}
+	 
+	.nav .nav-column h3 {
+	    margin: 20px 0 10px 0;
+	    line-height: 18px;
+	 
+	    font-family: Helvetica, Arial, sans-serif;
+	    font-size: 14px;
+	    color: #ac7600;
+	    text-transform: uppercase;
+	}
+	 
+	.nav .nav-column li a {
+	    display: block;
+	    line-height: 26px;
+	 
+	    font-family: Helvetica, Arial, sans-serif;
+	    font-size: 13px;
+	    color: skyblue;
+	}
+	 
+	.nav .nav-column li a:hover { color: white; }
+
+	#megamenu {
+		margin: auto;
+	}
+
+/***** PAGE TITLES *****/
+
+#department-title {
+	padding-top: 30px;
+	border-bottom: 2px solid #CCC;
+}
+
+#page-title {
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+
+/***** SIDE NAV *****/
+
+.side-nav {
+	padding-top: 30px;
+}
+
+.side-nav ul{
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.side-nav li {
+	list-style: none;
+	color: #002855;
+	padding-top: 5px;
 	padding-bottom: 5px;
+	border-bottom: 1px solid #CCC;
 }
 
-#main-page-stats {
-	background: #1b3a59;
-	color: #fff;
-	height: 125px;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 125px;
+.side-nav h1 {
+	color: #ac7600;
+	font-size: 19px;
+	font-weight: 700;
+	text-transform: uppercase; 
+	margin-left: 25px;
 }
 
-#main-page-stats div {
-	border-right: 2px #002855 solid;
-}
+/***** CHEVRONs *****/
 
-#stat-number {
-	font-size: 2.2em;
-}
-
-/***** FOOTER *****/
-
-#footer {
+.chevron-down {
+	height: 100px;
 	width: 100%;
-	height: 366px;
+	background-color: #ac7600;
+	-webkit-clip-path: polygon(50% 85%, 100% 0, 100% 0, 50% 100%, 0 0, 0 0);
+	clip-path: polygon(50% 85%, 100% 0, 100% 0, 50% 100%, 0 0, 0 0);
 }
 
-#baselinks {
-	width: 100%;
-	height: 275px;
-	background: #022040;
-}
+/***** FOOTERS *****/
 
-#contact {
-	width: 100%;
-	height: 90px;
+.schoolcraft-footer {
+	padding-top: 30px;
+	padding-bottom: 30px;
 	background: #002855;
+	
+}
+
+.schoolcraft-footer h1 {
+	font-size: 23px;
+	color: #fff;
+	text-transform: none;
+	font-weight: normal;
+}
+
+.schoolcraft-footer h2 {
+	font-size: 18px;
+	color: #fff;
+	text-transform: none;
+	font-weight: normal;
 }

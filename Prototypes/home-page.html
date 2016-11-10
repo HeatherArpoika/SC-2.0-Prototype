@@ -13,17 +13,17 @@
 
 <body>
 	<div id="container">
-		<div id="quicklinks">
+		<div id="quicklinks" class="hidden-xs">
 			<ul id="quicklinks-nav" class="container">
 				<li>WebAdvisor</li>
 				<li>Blackboard</li>
 				<li>SC<em>mail</em></li>
 				<li>Social</li>
 				<li>A-Z</li>
-				<li><i class="fa fa-search" aria-hidden="true"></i></li>
+				<li id="search-icon"><i class="fa fa-search" aria-hidden="true"></i></li>
 			</ul>
 		</div>
-		<div id="header">
+		<div id="header" class="hidden-xs hidden-sm">
 			<div id="logo" class="container">
 				<div class="row">
 					<img src="../images/logo-schoolcraft-college.png">
@@ -42,37 +42,50 @@
 		</div>
 		<div id="content" class="container">
 			<div class="row">
-				<div class="col-sm-9" id="hero-image">
-					<h1 id="hero-image-h1">The challenge you want,<br>the pride you deserve.</h1>
-					<div id="hero-image-text-box">
+				<div class="col-md-9 col-xs-12" id="hero-image">
+					<h1 id="hero-image-h1" class="hidden-xs hidden-sm">The challenge you want,<br>the pride you deserve.</h1>
+					<div id="hero-image-text-box" class="hidden-xs hidden-sm">
 						<h2 id="hero-image-h2">Meet Chef Shawn</h2>
 						<p>Curabitur finibus purus at dui luctus, in tristique enim dignissim. Cras ultrices vel purus quis sagittis. Suspendisse convallis tempus sem quis pharetra. Quisque et ante et diam viverra tincidunt at sed urna.</p>
 						<p><a>The People of Schoolcraft <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
 					</div>
 				</div>
-				<div class="col-sm-3" id="hero-features">
-					<div class="row">
-						<div class="col-sm-12">
-							Looking to Start of Grow Your Business
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							New Continuing Education and Professional Development Classes Start in January
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							Looking to Start of Grow Your Business
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							Looking to Start of Grow Your Business
-						</div>
+				<!-- Show on mobile only -->
+				<div class="row hidden-md hidden-lg" id="mobile-hero-row">
+					<div class="col-xs-4" id="mobile-hero-feature-argyle"></div>
+					<div class="col-xs-8" id="mobile-hero-feature">
+						<h2 id="hero-image-h2">Meet Chef Shawn</h2>
+						<h3 id="hero-image-h3"><a>The People of Schoolcraft <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></h3>
 					</div>
 				</div>
 			</div>
+			<div class="col-md-3 hidden-xs hidden-sm" id="hero-features">
+				<div class="row hero-feature-row">
+					<div class="col-md-4 hero-feature-image"></div>
+					<div class="col-md-8 hero-feature-story">
+						<a>Looking to Start or Grow Your Business</a>
+					</div>
+				</div>
+				<div class="row hero-feature-row">
+					<div class="col-md-4 hero-feature-image"></div>
+					<div class="col-md-8 hero-feature-story">
+						<a>New Continuing Education and Professional Development Classes Start in January</a>
+					</div>
+				</div>
+				<div class="row hero-feature-row">
+					<div class="col-md-4 hero-feature-image"></div>
+					<div class="col-md-8 hero-feature-story">
+						<a>Job Search Solutions Workshops</a>
+					</div>
+				</div>
+				<div class="row hero-feature-row">
+					<div class="col-md-4 hero-feature-image"></div>
+					<div class="col-md-8 hero-feature-story">
+						<a>Multi-Sport Dome to be Built at Schoolcraft College</a>
+					</div>
+				</div>
+			</div>
+		</div>
 			<div class="row">
 				<div class="col-lg-3">
 					<div class="main-content-header">News <i class="fa fa-angle-double-right" aria-hidden="true"></i></div>
