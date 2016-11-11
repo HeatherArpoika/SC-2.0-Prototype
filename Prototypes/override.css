@@ -38,21 +38,25 @@ p {
 
 h1 {
 	color: #ac7600;
-	font-size: 19px;
-	font-weight: 700;
+	font-size: 30px;
+	font-weight: normal;
 	text-transform: uppercase;
+	font-family: "Jaldi", sans-serif;
 }
 
 h2 {
 	font-size: 30px;
+	font-weight: 700;
 	color: #002855;
 	padding-top: 15px;
+	font-family: "Jaldi", sans-serif;
 }
 
 h3 {
 	font-size: 25px;
 	color: #002855;
 	padding-top: 15px;
+	font-family: "Jaldi", sans-serif;
 }
 
 /***** TOP ROW *****/
@@ -212,18 +216,63 @@ h3 {
 }
 
 .side-nav h1 {
-	color: #ac7600;
-	font-size: 19px;
-	font-weight: 700;
-	text-transform: uppercase; 
 	margin-left: 25px;
+}
+
+/***** CONTACT AREA *****/
+
+#connect-with-heading {
+	margin-top: 100px;
+
+}
+
+#contact-chevron {
+	z-index: 0;
+	height: 100px;
+	width: 100%;
+	position: relative;
+	top: 100px;
+	background-color: #ac7600;
+	-webkit-clip-path: polygon(50% 85%, 100% 0, 100% 0, 50% 100%, 0 0, 0 0);
+	clip-path: polygon(50% 85%, 100% 0, 100% 0, 50% 100%, 0 0, 0 0);
+}
+
+#contact-us {
+	background: #fed16d;
+	height: 500px;
+	-webkit-clip-path: polygon(100% 13.3%, 100% 100%, 0 100%, 0 0);
+	clip-path: polygon(100% 15%, 100% 100%, 0 100%, 0 0);
+}
+
+#contact-right-1 {
+	height: 500px;
+	background: #bada55;
+	-webkit-clip-path: polygon(25% 20%, 100% 0, 100% 100%, 0 100%, 0 13.3%);
+	clip-path: polygon(25% 20%, 100% 0, 100% 100%, 0 100%, 0 13.3%);
+}
+
+#contact-right-2 {
+	height: 500px;
+	background: #bada55;
+	-webkit-clip-path: polygon(50% 20%, 100% 13.3%, 100% 100%, 0 100%, 0 13.3%);
+	clip-path: polygon(50% 20%, 100% 13.3%, 100% 100%, 0 100%, 0 13.3%);
+}
+
+#contact-right-3 {
+	height: 500px;
+	background-color: #fed16d;
+	-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13.3%);
+	clip-path: polygon(25% 20%, 100% 0, 100% 100%, 0 100%, 0 13.3%);
 }
 
 /***** CHEVRONs *****/
 
 .chevron-down {
+	z-index: 999;
 	height: 100px;
 	width: 100%;
+	position: relative;
+	top: 100px;
 	background-color: #ac7600;
 	-webkit-clip-path: polygon(50% 85%, 100% 0, 100% 0, 50% 100%, 0 0, 0 0);
 	clip-path: polygon(50% 85%, 100% 0, 100% 0, 50% 100%, 0 0, 0 0);
