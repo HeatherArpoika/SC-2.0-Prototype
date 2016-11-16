@@ -1,14 +1,15 @@
+/***** MEDIA QUERIES *****
+
+medium>830
+
+*****/
+
 /***** SETUP *****/
 
 	body {
 		background: #f1f1f1 url("../images/bg-body-strip.png") repeat-x;
 		font-family: "Jaldi", sans-serif;
-		font-size: 19px;
-	}
-
-	/* Creates ability to have 5 columns span the full width of the row. */
-	.col-xs-15, .col-sm-15, .col-md-15, .col-lg-15{
-	    width:20%;
+		font-size: 16px;
 	}
 
 	.column, .columns {
@@ -26,6 +27,22 @@
 
 	#right-side {
 		padding-left: 70px;
+	}
+
+
+/***** 5 COLUMN SET-UP *****/
+	/* Creates ability to have 5 columns span the full width of the row. */
+	.small-15, .medium-15, .large-15{
+	    width:20%;
+	}
+	.small-25, .medium-25, .large-25{
+	    width:40%;
+	}
+	.small-35, .medium-35, .large-35{
+	    width:60%;
+	}
+	.small-45, .medium-45, .large-45{
+	    width:80%;
 	}
 
 /***** OBJECTS *****/
@@ -68,9 +85,61 @@
 
 /***** TOP ROW *****/
 
-	#logo-row {
+	#header-desktop {
 		background: none;
 		padding-top: 50px;
+	}
+
+	#header-mobile {
+		background: #002855;
+		border-bottom: 5px solid #CC8A00;
+		text-align: right;
+		color: #fdd26e;
+		vertical-align: middle;
+		font-size: 19px;
+		line-height: 20px;
+	}
+
+	#important-links {
+		background: none;
+		color: #002855;
+		font-size: 15px;
+		font-weight: 700;
+	}
+
+	#important-links ul {
+		list-style: none;
+		margin-bottom: 0;
+	}
+
+	#important-links li {
+		display: inline;
+		padding-left: 32.5px;
+	}
+
+	#search-bar {
+		background: none;
+		float: right;
+	}
+
+	#search-bar input[type=search] {
+		width: 300px;
+		border: 1px solid #c9c9c9;
+	}
+
+	#search-bar input[type=submit] {
+		background-color: #bbb;
+	}
+
+	#search-button {
+		color: #9b9b9b;
+		background: #c9c9c9;
+		height: 40px;
+		width: 40px;
+		padding: 8px;
+		border: 1px solid #c9c9c9;
+		display: inline-block;
+		text-align: center;
 	}
 
 /***** MEGA MENU *****/
@@ -194,6 +263,7 @@
 
 	#megamenu {
 		margin: auto;
+		height: 59px;
 	}
 
 /***** PAGE TITLES *****/
@@ -303,11 +373,44 @@
 
 /***** FOOTERS *****/
 
+	#footer-navigation {
+		background-color: #022040;
+		height: 325px;
+		color: white;
+		font-family: 'Jaldi', sans-serif;
+		font-size: 17px;
+	}
+
+	#belltower {
+		background: url("../images/belltower.png") no-repeat;
+		min-width: 325px;
+		min-height: 325px;
+	}
+
+	.footer-nav-list {
+		padding-top: 50px;
+	}
+
+	#footer-navigation ul{
+		list-style: none;
+		margin: 0;
+	}
+
+	#footer-navigation li{
+		padding-bottom: 5px;
+	}
+
+	#answer-center-button {
+		background-color: #5bc2e7;
+		color: #002855;
+		font-weight: 700;
+	}
+
 	.schoolcraft-footer {
 		padding-top: 30px;
 		padding-bottom: 30px;
 		background: #002855;
-		
+		border-top: #CC8A00 solid 7px;
 	}
 
 	.schoolcraft-footer h1 {
@@ -323,4 +426,3 @@
 		text-transform: none;
 		font-weight: normal;
 	}
-	
