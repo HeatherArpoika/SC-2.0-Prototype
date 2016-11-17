@@ -1,8 +1,18 @@
-/***** MEDIA QUERIES *****
+/***** FOUNDATION OVERRIDES *****/
+	
+	.off-canvas-content {
+		background: none;
+	}
 
-medium>830
+	.js-off-canvas-exit {
+		background: rgba(0, 40, 85, .9);
+	}
 
-*****/
+	.off-canvas {
+		background: #002855;
+		color: white;
+		font-size: 19px;
+	}
 
 /***** SETUP *****/
 
@@ -25,10 +35,17 @@ medium>830
 
 	}
 
-	#right-side {
-		padding-left: 70px;
+	@media screen and (max-width: 39.9375em) {
+		#right-side {
+			
+		}
 	}
 
+	@media screen and (min-width: 40em) {
+		#right-side {
+			padding-left: 70px;
+		}
+	}
 
 /***** 5 COLUMN SET-UP *****/
 	/* Creates ability to have 5 columns span the full width of the row. */
@@ -95,9 +112,9 @@ medium>830
 		border-bottom: 5px solid #CC8A00;
 		text-align: right;
 		color: #fdd26e;
+		line-height: 20px;
 		vertical-align: middle;
 		font-size: 19px;
-		line-height: 20px;
 	}
 
 	#important-links {
@@ -140,6 +157,20 @@ medium>830
 		border: 1px solid #c9c9c9;
 		display: inline-block;
 		text-align: center;
+	}
+
+/***** OFF-CANVAS MENU *****/
+
+	.nav-sc li a{
+		color: white;
+	}
+
+	.is-accordion-submenu-parent>a:after {
+		border-color: white transparent transparent;
+	}
+
+	.menu.nested {
+		border-left: #CC8A00 solid 3px;
 	}
 
 /***** MEGA MENU *****/
@@ -268,14 +299,36 @@ medium>830
 
 /***** PAGE TITLES *****/
 
-	#department-title {
-		padding-top: 30px;
-		border-bottom: 2px solid #CCC;
+	/* Small only */
+	@media screen and (max-width: 39.9375em) {
+		#department-title {
+			background-color: #002855;
+			padding-top: 5px;
+			text-align: center;
+		}
+
+		#page-title {
+			padding-left: 15px;
+			padding-right: 10px;
+		}
+
+		#page-content {
+			padding-left: 15px;
+			padding-right: 10px;
+		}
 	}
 
-	#page-title {
-		padding-top: 25px;
-		padding-bottom: 15px;
+	/* Medium and up */
+	@media screen and (min-width: 40em) {
+		#department-title {
+			padding-top: 30px;
+			border-bottom: 2px solid #CCC;
+		}
+
+		#page-title {
+			padding-top: 25px;
+			padding-bottom: 15px;
+		}
 	}
 
 /***** SIDE NAV *****/
@@ -311,11 +364,6 @@ medium>830
 
 /***** CONTACT AREA *****/
 
-	#connect-with-heading {
-		position: relative;
-		top: 127px;
-	}
-
 	#contact-chevron {
 		z-index: 999;
 		height: 127px;
@@ -327,35 +375,46 @@ medium>830
 		clip-path: polygon(50% 85%, 100% 0, 100% 0, 50% 100%, 0 0, 0 0);
 	}
 
+	/* Small only */
+	@media screen and (max-width: 39.9375em) {
+		#contact-us {
+			padding-left: 15px;
+		}
+	}
+
+	/* Medium and up screens */
+	@media screen and (min-width: 40em) {
+		#connect-with-heading {
+			position: relative;
+			top: 127px;
+		}
+		#contact-us {
+			height: 650px;
+			padding-top: 100px;
+			padding-left: 50px;
+			-webkit-clip-path: polygon(100% 13%, 100% 100%, 0 100%, 0 0);
+			clip-path: polygon(100% 13%, 100% 100%, 0 100%, 0 0);
+		}
+		#contact-right-1 {
+			height: 650px;
+			-webkit-clip-path: polygon(25% 19%, 100% 0, 100% 100%, 0 100%, 0 13%);
+			clip-path: polygon(25% 19%, 100% 0, 100% 100%, 0 100%, 0 13%);
+		}
+		#contact-right-2 {
+			height: 650px;
+			-webkit-clip-path: polygon(50% 19%, 100% 13%, 100% 100%, 0 100%, 0 13%);
+			clip-path: polygon(50% 19%, 100% 13%, 100% 100%, 0 100%, 0 13.3%);
+		}
+		#contact-right-3 {
+			height: 650px;
+			-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13%);
+			clip-path: polygon(25% 20%, 100% 0, 100% 100%, 0 100%, 0 13%);
+		}
+	}
+
 	#contact-us {
 		background: #fed16d;
-		height: 650px;
-		padding-top: 100px;
-		padding-left: 50px;
 		color: #000;
-		-webkit-clip-path: polygon(100% 13%, 100% 100%, 0 100%, 0 0);
-		clip-path: polygon(100% 13%, 100% 100%, 0 100%, 0 0);
-	}
-
-	#contact-right-1 { /* Uses two columns as one */
-		height: 650px;
-		background: #bada55;
-		-webkit-clip-path: polygon(25% 19%, 100% 0, 100% 100%, 0 100%, 0 13%);
-		clip-path: polygon(25% 19%, 100% 0, 100% 100%, 0 100%, 0 13%);
-	}
-
-	#contact-right-2 { /* Uses one column on left */
-		height: 650px;
-		background: #bada55;
-		-webkit-clip-path: polygon(50% 19%, 100% 13%, 100% 100%, 0 100%, 0 13%);
-		clip-path: polygon(50% 19%, 100% 13%, 100% 100%, 0 100%, 0 13.3%);
-	}
-
-	#contact-right-3 { /* Uses one column on right */
-		height: 650px;
-		background-color: #fed16d;
-		-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 13%);
-		clip-path: polygon(25% 20%, 100% 0, 100% 100%, 0 100%, 0 13%);
 	}
 
 /***** CHEVRONS *****/
